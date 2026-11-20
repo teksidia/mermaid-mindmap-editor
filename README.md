@@ -2,6 +2,10 @@
 
 A small web page for tidying up mind maps, so you can get them into your notes without hand-editing code.
 
+![Screenshot of the editor](./ui.png)
+
+- [See it in action](https://mermaid-mindmap-editor.accounts-098.workers.dev/)
+
 ## What is it?
 
 If you use an AI assistant to brainstorm, it can write you a mind map as a block of text in a format called **Mermaid**. Obsidian (the note-taking app) can turn that text into a picture. The catch: the AI's first attempt is rarely perfect, and fixing it means editing indented text by hand, which is fiddly.
