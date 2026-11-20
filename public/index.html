@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mermaid Mindmap Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <strong>Mindmap Editor</strong>
+    <span class="group">
+      <button id="undo" type="button" title="Undo (Ctrl+Z)" disabled>Undo</button>
+      <button id="redo" type="button" title="Redo (Ctrl+Shift+Z)" disabled>Redo</button>
+    </span>
+    <span class="group">
+      <button id="copy" type="button" title="Copy as a ```mermaid block (what Obsidian expects)">Copy code</button>
+      <button id="paste" type="button" title="Load code from the clipboard">Paste &amp; load</button>
+      <button id="download" type="button" title="Download as a .md file">Download .md</button>
+    </span>
+    <span class="group">
+      <button id="new" type="button" title="Start a blank mindmap (undoable)">New</button>
+      <button id="sample" type="button" title="Load the sample mindmap (undoable)">Sample</button>
+      <button id="fit" type="button" title="Fit to view">Fit</button>
+    </span>
+    <span class="hint">Click select · Double-click/F2 edit · Tab child · Enter sibling · Space fold · Del delete · drag to move</span>
+  </header>
+  <main class="panes">
+    <section class="code-pane">
+      <textarea id="code" spellcheck="false" placeholder="Paste mermaid mindmap code here"></textarea>
+    </section>
+    <section class="canvas-pane">
+      <svg id="canvas" xmlns="http://www.w3.org/2000/svg"></svg>
+      <div id="status" role="status"></div>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
